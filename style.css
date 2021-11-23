@@ -61,7 +61,7 @@
   background-color: #ccc;
 }
 .footer-content {
-  margin: 0 60px;
+  padding: 60px;
 }
 .footer-list {
   display: flex;
