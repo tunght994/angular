@@ -1,0 +1,71 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    &-logo {
+        width: 200px;
+        img {
+            width: 100%;
+        }
+    }
+    &-menu {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        i {
+            font-size: 45px;
+        }
+        span {
+            font-size: 18px;
+        }
+    }
+    &-search {
+        width: 750px;
+        height: 40px;
+        input {
+            width: 100%;
+            height: 100%;
+            padding: 0 10px;
+        }
+    }
+    &-user {
+        &-reg {
+            margin-right: 20px;
+        }
+    }
+}
+.banner {
+    width: 100%;
+    height: 500px;
+    background-color: red;
+}
+.list-course {
+    margin: 60px;
+    p {
+        font-size: 20px;
+        padding-bottom: 10px;
+        font-weight: 400;
+    }
+    &-card {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 125px;
+        justify-content: space-around;
+    }
+}
+
+.footer {
+    width: 100%;
+    height: 100%;
+    background-color: #ccc;
+    &-content {
+        margin: 0 60px;
+    }
+    &-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 125px;
+        justify-content: flex-start;
+    }
+}
