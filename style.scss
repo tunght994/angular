@@ -10,14 +10,34 @@
         }
     }
     &-menu {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        i {
-            font-size: 45px;
+        position: relative;
+        &-list {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            cursor: pointer;
+            i {
+                font-size: 45px;
+            }
+            span {
+                font-size: 18px;
+            }
         }
-        span {
-            font-size: 18px;
+        &:hover &-item {
+            display: block;
+        }
+        &-item {
+            position: absolute;
+            background-color: red;
+            width: 200px;
+            padding: 10px;
+            display: none;
+            cursor: pointer;
+            &-text {
+                &:hover {
+                    color: #fff;
+                }
+            }
         }
     }
     &-search {
@@ -38,7 +58,7 @@
 .banner {
     width: 100%;
     height: 500px;
-    background-color: red;
+    background-color: blue;
 }
 .list-course {
     margin: 60px;
